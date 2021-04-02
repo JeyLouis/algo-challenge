@@ -6,10 +6,12 @@ don't. E.g
 */
 
 
-
 function isAnagram(stringA, stringB) {
-    // Code goes here
+    for(let letter of stringB){
+      if(!stringA.includes(letter)){
+        return false
+      }
+    }
+    return true
 }
-
-
 module.exports = isAnagram
