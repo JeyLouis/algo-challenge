@@ -10,8 +10,13 @@ than 1(index 0), but less than 2(index 1).
 
 
 function whereIBelong(arr, num) {
-   // Code goes here
-
+  if(arr.length == 0) return 0
+  let inFunc = Number(arr.findIndex(element => element >= num))
+  if(inFunc === -1){
+    return 0
+  }else{
+    return inFunc
+  }
 }
 
 
