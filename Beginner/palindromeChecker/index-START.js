@@ -7,7 +7,13 @@ e.g palindromeChecker('racecar') // will return true
 
 
 function palindromeChecker(text) {
-    v// Code goes here
+    // Code goes here
+    let palindrome = text.split('').reverse().join('')
+    if(text === palindrome){
+      return true
+    } else {
+      return false
+    }
 }
 
 
